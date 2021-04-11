@@ -8,6 +8,7 @@ import os
 import argparse
 from datetime import datetime
 import re
+import json
 
 # configure logger
 
@@ -221,7 +222,7 @@ if __name__=='__main__':
     if args.command == 'list':
         with Parser() as p:
             response = p.get_pages_response(args.numbers)
-            print(response)
+            print(json.dumps(response, indent=' '))
     if args.command == 'fetch':
         with Parser() as p:
             p.get_docs(args.number, args.min_year, args.max_year)
