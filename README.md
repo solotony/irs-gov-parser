@@ -1,18 +1,18 @@
-##Installation
+## Installation
 
 ```
 git clone https://github.com/solotony/irs-gov-parser.git
 pip install -r requirements.txt
 ```
 
-##Run
+## Run
 
 ```
 python demo.py list --numbers "Form W-2"  "Form 1095-C"
 python demo.py fetch --number "Form W-2" --min_year 2000 --max_year 2021
 ```
 
-##Comments
+## Comments
 
 This utilite made as "for myself", not for public usage:
   - no any tests
